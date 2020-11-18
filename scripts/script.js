@@ -49,7 +49,7 @@ class Fish {
   }
 
   update() {
-    if (this.pos.x > w - this.size || this.pos.x < this.size / 2) {
+    if (this.pos.x > w + this.size / 2 || this.pos.x < this.size / 2) {
       // figure out the exact pos yourself
       this.reverse = !this.reverse
       this.speed *= -1
